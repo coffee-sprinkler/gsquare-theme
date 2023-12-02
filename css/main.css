@@ -1195,6 +1195,14 @@ footer {
   background-color: #ebebeb;
   padding-inline: 0.75rem;
 }
+@media screen and (width < 426px) {
+  .donation .donation-form-wrapper .form-donation .group:nth-of-type(3) .col label {
+    line-height: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
 .donation .donation-form-wrapper .form-donation .group:last-of-type {
   display: flex;
   justify-content: center;
