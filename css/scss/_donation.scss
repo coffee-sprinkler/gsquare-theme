@@ -41,6 +41,10 @@
     margin-inline: auto;
     padding: 3.625rem 6rem 4rem;
 
+    @media screen and (width < 769px) {
+      padding: 3rem 2rem;
+    }
+
     @media screen and (width < 426px) {
       padding: 2rem 1rem;
     }
@@ -133,6 +137,16 @@
       .methods,
       .group {
         padding-left: 1.25rem;
+      }
+
+      .methods {
+        display: flex;
+        align-items: center;
+        gap: 3.25rem;
+
+        input[type='radio'] {
+          accent-color: #707070;
+        }
       }
 
       .title {

@@ -1076,6 +1076,11 @@ footer {
   margin-inline: auto;
   padding: 3.625rem 6rem 4rem;
 }
+@media screen and (width < 769px) {
+  .donation .donation-form-wrapper {
+    padding: 3rem 2rem;
+  }
+}
 @media screen and (width < 426px) {
   .donation .donation-form-wrapper {
     padding: 2rem 1rem;
@@ -1156,6 +1161,14 @@ footer {
 .donation .donation-form-wrapper .form-donation .methods,
 .donation .donation-form-wrapper .form-donation .group {
   padding-left: 1.25rem;
+}
+.donation .donation-form-wrapper .form-donation .methods {
+  display: flex;
+  align-items: center;
+  gap: 3.25rem;
+}
+.donation .donation-form-wrapper .form-donation .methods input[type=radio] {
+  accent-color: #707070;
 }
 .donation .donation-form-wrapper .form-donation .title {
   margin-bottom: 0.25em;
