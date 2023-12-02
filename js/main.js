@@ -100,7 +100,7 @@ jQuery(document).ready(function ($) {
     // Validate Phone Number for Philippine telco (starts with "09")
     const phoneInput = document.getElementById('phone')
     const phoneValue = phoneInput.value.trim()
-    const phonePattern = /^09\d{10}$/ // Assumes a 11-digit phone number starting with "09"
+    const phonePattern = /^09\d{9}$/ // Assumes a 11-digit phone number starting with "09"
 
     if (!phonePattern.test(phoneValue)) {
       toastifyError(
