@@ -1033,6 +1033,10 @@ footer {
   display: none;
 }
 
+input::-moz-placeholder {
+  font-family: "Montserrat";
+}
+
 .donation {
   background: url("/wp-content/uploads/2023/12/swish-bg-1.png") center/100% 150% no-repeat;
   padding-top: 5.25rem;
@@ -1231,6 +1235,7 @@ footer {
 
 .bottom {
   margin-block: 7.5rem 8.5rem;
+  font-family: "Montserrat";
 }
 .bottom .two-column {
   display: grid;

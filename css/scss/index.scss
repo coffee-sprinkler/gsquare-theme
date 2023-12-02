@@ -3,5 +3,9 @@ footer {
   display: none;
 }
 
+input::-moz-placeholder {
+  font-family: 'Montserrat';
+}
+
 @import 'donation';
 @import 'bottom';
