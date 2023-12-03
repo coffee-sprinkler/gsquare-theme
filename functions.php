@@ -200,6 +200,10 @@ function process_donation_form() {
 	$donated_amount = floatval(preg_replace("/[^0-9.]/", "", $form_data['donated-amount']));
 	$payment_method = sanitize_text_field($form_data['payment-method']);
 
+	// Capitalize first and last names
+  $first_name = ucfirst(strtolower($first_name));
+  $last_name = ucfirst(strtolower($last_name));
+
 	$post_content = 'Donation Amount: ' .  number_format($donated_amount, 2);
 
 	$post_data = array(
