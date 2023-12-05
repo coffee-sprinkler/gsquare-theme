@@ -62,6 +62,28 @@ jQuery(document).ready(function ($) {
     $('#donation-form').find(':submit').prop('disabled', true)
   }
 
+  function setDonationInput() {
+    const donationInput = $('#donate-amount')
+
+    donationInput.on('input', function (e) {
+      let inputValue = $(this).val()
+
+      let numericValue = inputValue.replace(/[^0-9.]/g, '')
+
+      $(this).val(numericValue)
+    })
+
+    const donatedInput = $('#donated-amount')
+
+    donatedInput.on('input', function (e) {
+      let inputValue = $(this).val()
+
+      let numericValue = inputValue.replace(/[^0-9.]/g, '')
+
+      $(this).val(numericValue)
+    })
+  }
+
   function validateForm() {
     // Validate First Name
     const firstNameInput = document.getElementById('firstName')
@@ -224,6 +246,8 @@ jQuery(document).ready(function ($) {
     $('#donate-amount').val(formattedValue.replace('$', ''))
     $('#donated-amount').val(formattedValue)
   })
+
+  setDonationInput()
 
   submitForm()
   updateProgressValue()
